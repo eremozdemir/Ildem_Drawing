@@ -1,5 +1,7 @@
 # Ildem_Drawing
 
+![Drawing of Ildem](Drawing.jpg)
+
 ## Overview
 The **Ildem_Drawing** project is a WebGL-based drawing of **Ildem Gür**, created using a stick-figure style. The figure is rendered using JavaScript and WebGL techniques. The project uses basic WebGL to render shapes, colors, and transformations to create a dynamic figure on an HTML canvas.
 
