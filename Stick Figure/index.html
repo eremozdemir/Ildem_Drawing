@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <div class="container">
+        <canvas id="webgl-canvas" width="400" height="400"></canvas>
+        <div class="name">Ildem</div>
+    </div>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stick Figure in WebGL</title>
+</head>
+<body>
+    <canvas id="webgl-canvas" width="800" height="800"></canvas>
+
+    <!-- Vertex Shader -->
+    <script id="vertex-shader" type="x-shader/x-vertex">
+        attribute vec4 a_Position;
+        void main() {
+            gl_Position = a_Position;
+        }
+    </script>
+
+    <!-- Fragment Shader -->
+    <script id="fragment-shader" type="x-shader/x-fragment">
+        precision mediump float;
+        uniform vec4 u_FragColor;
+        void main() {
+            gl_FragColor = u_FragColor;
+        }
+    </script>
+    
+
+    <!-- JavaScript -->
+    <script src="stick-figure.js"></script>
+    <div class="container"></div>
+        <canvas id="webgl-canvas" width="400" height="400"></canvas>
+        <div class="name">Ildem</div>
+    </div>
+</body>
+</html>
